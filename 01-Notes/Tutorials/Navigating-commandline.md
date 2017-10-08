@@ -1,11 +1,11 @@
-#Just Text
+# Just Text
 
-##Navigating the computer from the command line
+## Navigating the computer from the command line
 In this module we will be following a Software Carpentry Lesson. It is suggested that you have this page open to follow along and a bash shell window. 
 
 ---
 
-#The Unix Shell
+# The Unix Shell
 
 *credit*:    
 [![sc](http://eagle.fish.washington.edu/cnidarian/skitch/Files_and_Directories_1A575F8C.png)](http://software-carpentry.org/)   
@@ -15,7 +15,7 @@ see also
 
 ---
 
-#Intro
+# Intro
 
 > ## Learning Objectives
 >

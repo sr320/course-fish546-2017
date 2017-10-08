@@ -146,7 +146,7 @@ because its name begins with `/`.
 
 So that we have the same experience lets navigate to the 'fake' directory structure you just downloaded.  For example on a Mac you can type `cd Desktop/shell-novice/data/users/nelle` if you are in your home direcotory.
 
-##ls
+## ls
 
 Let's see what's in Nelle's home directory by running `ls`,
 which stands for "listing":
@@ -213,7 +213,7 @@ which doesn't exist.
 -->
 
 
-##relative path
+## relative path
 Now let's take a look at what's in Nelle's `data` directory by running `ls -F data`,
 i.e.,
 the command `ls` with the **arguments** `-F` and `data`.
@@ -397,7 +397,7 @@ but we'll see some uses for it soon.
 > because there are fewer special cases and exceptions to keep track of.
 > --->
 
-##Nelle's Pipeline: Organizing Files
+## Nelle's Pipeline: Organizing Files
 
 Knowing just this much about files and directories,
 Nelle is ready to organize the files that the protein assay machine will create.
@@ -464,7 +464,7 @@ and we will see it in many other tools as we go on.
 
 
 
-##Key Points
+## Key Points
 
 * The file system is responsible for managing information on the disk.
 * Information is stored in files, which are stored in directories (folders).
@@ -479,7 +479,7 @@ and we will see it in many other tools as we go on.
 
 <!--
 
-#Quiz
+# Quiz
 
 <img src="http://eagle.fish.washington.edu/cnidarian/skitch/Files_and_Directories_1A575F26.png" alt="Filesystem for Challenge Questions" />
 
@@ -767,7 +767,7 @@ Now that we know a few basic commands, we can finally look at the shell's most p
     cubane.pdb    ethane.pdb    methane.pdb
     octane.pdb    pentane.pdb   propane.pdb
     
-##word count
+## word count
 
 Let's go into that directory with `cd` and run the command `wc *.pdb`. `wc` is the "word count" command: it counts the number of lines, words, and characters in files. The `*` in `*.pdb` matches zero or more characters, so the shell turns `*.pdb` into a complete list of `.pdb` files:
 
@@ -813,7 +813,7 @@ The `>` tells the shell to [redirect][5] the command's output to a file instead 
     $ ls lengths
 
     lengths
-##cat
+## cat
 We can now send the content of `lengths` to the screen using `cat lengths`. `cat` stands for "concatenate": it prints the contents of files one after another. There's only one file in this case, so `cat` just shows us what it contains:
 
     $ cat lengths
@@ -825,7 +825,7 @@ We can now send the content of `lengths` to the screen using `cat lengths`. `cat
       21  pentane.pdb
       15  propane.pdb
      107  total
-##sort
+## sort
 Now let's use the `sort` command to sort its contents. We will also use the -n flag to specify that the sort is numerical instead of alphabetical. This does _not_ change the file; instead, it sends the sorted result to the screen:
 
     $ sort -n lengths
@@ -838,7 +838,7 @@ Now let's use the `sort` command to sort its contents. We will also use the -n f
      30  octane.pdb
     107  total
 
-##head
+## head
 We can put the sorted list of lines in another temporary file called `sorted-lengths` by putting `> sorted-lengths` after the command, just as we used `> lengths` to put the output of `wc` into `lengths`. Once we've done that, we can run another command called `head` to get the first few lines in `sorted-lengths`:
 
     $ sort -n lengths > sorted-lengths
